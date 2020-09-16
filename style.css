@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     padding: 0;
     margin: 0;
@@ -14,16 +17,17 @@ body{
 }
 .container{
     display: flex;
-    height: 60%;
+    height: 65%;
     width:100%;
     justify-content: center;
+    margin: 10px;
 }
 .header{
     background-color: #31313a;
-    height: 300px;
+    height: 350px;
     text-transform: uppercase;
     box-sizing: border-box;
-    width:70px;
+    width:72px;
     margin-right: 10px;
     border-radius: 3px;
     padding-left: 5px;
@@ -34,7 +38,7 @@ body{
 }
 .header__list{
     margin:0;
-    padding:10px 0;
+    padding:20px 0;
     width: 100%;
     height: 100%;
     list-style: none;
@@ -73,16 +77,17 @@ body{
 }
 /*#78cc6d*/
 .main{
-    min-width: 500px;
+    min-width: 480px;
     background-color: #31313a;
     margin-top: -20px;
-    height: 600px;
+    height: 680px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius:10px;
-
+    z-index: 5;
+    box-shadow: -14px -16px 0  rgba(49, 49, 58,.3),10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 .main__infoTitle{
     color: rgba(255, 255, 255, 0.85);
@@ -118,11 +123,15 @@ body{
 }
 .info{
 background:#31313a;
+box-sizing: border-box;
 padding: 10px 20px;
-    width: 550px;
-    height: 530px;
+max-width: 708px;
+   height: 644px;
+    overflow-y:scroll;
 }
-
+.about__title{
+    color: rgba(255, 255, 255, 0.85);;
+}
 .about__info{
     display: flex;
     position: relative;
@@ -185,6 +194,8 @@ min-width: 50%;
     margin-bottom: 0;
     z-index: 2;
     margin-top: -60px;
+
+
 }
 .main__polygon{
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
@@ -207,6 +218,7 @@ min-width: 50%;
     width: 100%;
     margin:0 auto;
     border-radius: 50%;
+    box-shadow:-10px 8px rgba(120,204,109,.3)  ;
 
 }
 .main__bg{
@@ -216,7 +228,7 @@ min-width: 50%;
     background-size: cover;
     border-radius:10px;
    padding-top: 0;
-    height:50%;
+    height:52%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -228,4 +240,63 @@ min-width: 50%;
     height: 40%;
 
 
+}
+.resume__experienceDate{
+    font-size: 13px;
+    border:1px solid rgba(255, 255, 255, 0.55);;
+    padding: 3px 7px;
+    border-radius: 5px;
+
+}
+.resume__experienceDate-active{
+    color:#78cc6d;
+    border-color:#78cc6d;
+}
+.resume__experiencePosition{
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 5px;
+}
+.resume__experiencePlace{
+    font-size: 14px;
+}
+.resume__experienceDescrip{
+    line-height: 25px;
+}
+.resume__experienceLogo{
+    color:#78cc6d;
+    margin-right: 10px;
+}
+.resume__experience > h4{
+    position:relative;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.85);
+}
+.resume__experience > h4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 1px;
+    background: radial-gradient(ellipse at center, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+
+}
+.resume__experience{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+    min-width: 50%;
+
+}
+.resume__experienceJob{
+    position: relative;
+}
+.resume__experienceJob::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background: radial-gradient(ellipse at center, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
 }
