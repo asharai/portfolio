@@ -14,25 +14,17 @@
         <header class="header">
             <nav class="header__navigation">
                 <ul class="header__list">
-                    <a href="" class="header__listItem active">
+                    <a href="#" class="header__listItem active">
                         <i class="fas fa-user header__listIcon "></i>
                         <li>About</li>
                     </a>
-                    <a href="" class="header__listItem">
+                    <a href="#" class="header__listItem" >
                         <i class="fas fa-poll-h header__listIcon"></i>
                         <li>Resume</li>
                     </a>
-                    <a href="" class="header__listItem">
+                    <a href="#" class="header__listItem">
                         <i class="header__listIcon fas fa-paint-brush"></i>
                         <li>Works</li>
-                    </a>
-                    <a href="" class="header__listItem">
-                        <i class="header__listIcon fas fa-comment-alt"></i>
-                        <li>Blog</li>
-                    </a>
-                    <a href="" class="header__listItem">
-                        <i class="header__listIcon fas fa-at"></i>
-                        <li>Contact</li>
                     </a>
                 </ul>
             </nav>
@@ -64,7 +56,7 @@
             </div>
         </main>
         <section class="info">
-            <div class="about">
+            <div class="about block active__block">
                 <div class="about__content">
                 <h3 class="about__title">About Me</h3>
                     <div class="about__info">
@@ -90,9 +82,44 @@
                             </ul>
                         </div>
                     </div>
+
+                </div>
+                <div class="skills">
+                    <div class="about__content">
+                        <h3 class="about__title">My Skills</h3>
+                        <div class="about__info">
+                            <div class="resume__experience">
+                                <h4><i class="fas fa-code resume__experienceLogo"></i>CODING</h4>
+                                <ul class="skills__list">
+                                    <li><i class="fas fa-check skills__listIcon"></i>HTML&CSS</li>
+                                    <li><i class="fas fa-check skills__listIcon"></i>Адаптивная верстка</li>
+                                    <li><i class="fas fa-check skills__listIcon"></i>Less</li>
+                                    <li><i class="fas fa-check skills__listIcon"></i>Bootstrap</li>
+                                    <li><i class="fas fa-check skills__listIcon"></i>JS</li>
+                                    <li><i class="fas fa-check skills__listIcon"></i>React</li>
+
+                                </ul>
+                            </div>
+                            <div class="about__infoData">
+                                <div class="resume__experience">
+                                    <h4><i class="fas fa-brain resume__experienceLogo"></i>STUDY</h4>
+                                    <ul class="skills__list">
+                                        <li><i class="fas fa-book skills__listIcon"></i>HTML и CSS. Джон Дакетт</li>
+                                        <li><i class="fas fa-book skills__listIcon"></i>React in Action. Марк Тиленс</li>
+                                        <li><i class="fas fa-globe skills__listIcon"></i>htmlacademy.ru</li>
+                                        <li><i class="fas fa-globe skills__listIcon"></i>learn.javascript.ru</li>
+                                        <li><i class="fas fa-globe skills__listIcon"></i>freecodecamp.org</li>
+                                        <li><i class="fas fa-globe skills__listIcon"></i>codewars.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="resume">
+
+
+            <div class="resume block">
                 <div class="about__content">
                     <h3 class="about__title">Resume</h3>
                     <div class="about__info">
@@ -128,45 +155,53 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
-            <div class="projects">
-                <div class="about__content">
-                    <h3 class="about__title">My Skills</h3>
-                    <div class="about__info">
-                        <div class="resume__experience">
-                            <h4><i class="fas fa-code resume__experienceLogo"></i>CODING</h4>
 
+
+            <div class="projects block">
+                <div class="about__content">
+                    <h3 class="about__title">Projects</h3>
+                    <div class="about__info">
+                    <div class="projects__items">
+                        <div class="projects__item projects__itemFirst">
+                            <a href="https://github.com/asharai/burgerBuilder"  class="projects__itemLink" >
+                            <img class="projects__itemImg" src="burger-builder.PNG" alt="">
+                            <h4 class="projects__itemDescription">Burger Builder</h4>
+                            </a>
                         </div>
-                        <div class="about__infoData">
-                            <div class="resume__experience">
-                                <h4><i class="fas fa-brain resume__experienceLogo"></i>KNOWLEDGE</h4>
-                                <div class="resume__experienceJob">
-                                    <span class="resume__experienceDate resume__experienceDate-active ">2020-2023</span>
-                                    <p class="resume__experiencePosition">Программное обеспечение средств</p>
-                                    <span   class="resume__experiencePlace">СибГУТИ</span>
-                                    <p class="resume__experienceDescrip">
-                                        Поступил на дистанционное образование в вуз СибГУТИ по специальности
-                                        Програмнмое обеспечение средств автоматизированных систем.
-                                    </p>
-                                </div>
-                                <div class="resume__experienceJob">
-                                    <span class="resume__experienceDate ">2013-2017</span>
-                                    <p class="resume__experiencePosition">Компьютерные системы и комплексы</p>
-                                    <span   class="resume__experiencePlace">НКЭиВТ</span>
-                                    <p class="resume__experienceDescrip">Получил Средне-профессиональное образование по специальности компьютерные системы и комплексы</p>
-                                </div>
-                            </div>
+                        <div class="projects__item">
+                            <a  href="https://github.com/asharai/amazon-clone"class="projects__itemLink" >
+                            <img class="projects__itemImg" src="amazon_clone.PNG" alt="">
+                            <h4 class="projects__itemDescription">Amazon clone</h4>
+                         </a>
+
                         </div>
                     </div>
-                </div>
+                    </div>
             </div>
-
-            <div class="blog"></div>
+            </div>
             <div class="contact"></div>
 
         </section>
         </div>
+
     </section>
+
+    <script>
+        let buttons = Array.from(document.querySelectorAll('.header__listItem'));
+        buttons.forEach((item,i)=>item.addEventListener('click',()=>activeLink(i)));
+        const activeLink = (id) =>{
+           let links = Array.from(document.querySelectorAll('.block'));
+           document.querySelector('.active').classList.remove('active')
+           document.querySelector('.active__block').classList.remove('active__block');
+           links[id].classList.add('active__block');
+            buttons[id].classList.add('active');
+        }
+
+    </script>
 </body>
+
 </html>
